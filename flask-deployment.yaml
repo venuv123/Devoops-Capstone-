@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: flask-backend-deployment
+  name: Devoops-Capstone
 spec:
   replicas: 2
   strategy:
@@ -15,9 +15,9 @@ spec:
         app: flask-backend
     spec:
       containers:
-        - name: flask-app
+        - name: Devoops-Capstone
           imagePullPolicy: Always
-          image: pmbrull/k8-flask-api
+          image: Venuv123/Devoops-Capstone
           resources:
             requests:
               cpu: "50m"
