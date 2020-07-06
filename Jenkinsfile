@@ -13,8 +13,8 @@ pipeline {
     }
     stage('Login to dockerhub') {
       steps {
-        withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerhubpwd')]) {
-          sh 'docker login -u pmbrull -p ${dockerhubpwd}'
+        withCredentials([string(credentialsId: 'Devoops-Capstone', variable: 'Devoops-Capstone')]) {
+          sh 'docker login -u Venuv123 -p ${Devoops-Capstone}'
         }
       }
     }
